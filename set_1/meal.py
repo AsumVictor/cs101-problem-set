@@ -18,8 +18,9 @@ def convert(time):
     # add to the hours to get total hours hour + converted hour --> total hour
     # return total hour
     hour, minute = time.split(':')
-    minute_hours = (float(minute) / 60)
-    total_hours = minute_hours + int(hour)
+    
+    total_hours = float(minute) / 60 + int(hour)
+    
     return total_hours
 
     return splitted_string
