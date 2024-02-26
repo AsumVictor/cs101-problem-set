@@ -4,8 +4,14 @@
 
 
 def main():
-    print(convert('12:30'))
+    time = convert('18:59')
 
+    if time >= 7.0 and time <= 8.0:
+        print("Breakfast")
+    if time >= 12.0 and time <= 12.0:
+        print("Lunch")
+    if time >= 18.0 and time <= 19.0:
+        print("Dinner")
 
 def convert(time):
     # @input formatr '##:##' or '#:##'
@@ -18,12 +24,7 @@ def convert(time):
     # add to the hours to get total hours hour + converted hour --> total hour
     # return total hour
     hour, minute = time.split(':')
-    
-    total_hours = float(minute) / 60 + int(hour)
-    
-    return total_hours
-
-    return splitted_string
+    return float(minute) / 60 + int(hour)
 
 
 main()
