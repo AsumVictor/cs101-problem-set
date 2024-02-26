@@ -7,7 +7,7 @@ def main():
     # print the converted energy
     print(f'{energy} Joules ')
     
-# Define a function to handle conversion
+ # Define a function to handle conversion
 def convertEnergy(mass):
     # Accept integer mass as a parameter
     # Same he constand value of speed of light as C
