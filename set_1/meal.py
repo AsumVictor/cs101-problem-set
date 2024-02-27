@@ -4,7 +4,9 @@
 
 
 def main():
-    time = convert('18:59')
+   
+    # Accept input from user
+    time = convert(input('Type the time here in 24-hour time:  '))
 
     # Check if time is >= 7.0 and <= 8.0 print breakfast
     if time >= 7.0 and time <= 8.0:
@@ -26,8 +28,8 @@ def convert(time):
     # hour == first elemet ## or #
     # minute = second half ##
 
-    # convert the minute to hours ##/50 --> converted hour
-    # add to the hours to get total hours hour + converted hour --> total hour
+    # convert the minute to hours ##/60 minutes --> converted hour
+    # add to the hours to get total hours:  hour + converted hour --> total hour
     # return total hour
     hour, minute = time.split(':')
     return float(minute) / 60 + int(hour)
