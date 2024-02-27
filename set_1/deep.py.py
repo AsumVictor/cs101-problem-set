@@ -1,5 +1,7 @@
 def main():
+  
   answer = print('''What is the Great Question of Life, the Universe and Everything:  ''')
+  
   print(checkAnswer(answer))
 
 def checkAnswer(s):
