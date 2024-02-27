@@ -6,12 +6,18 @@
 def main():
     time = convert('18:59')
 
+    # Check if time is >= 7.0 and <= 8.0 print breakfast
     if time >= 7.0 and time <= 8.0:
         print("Breakfast")
-    if time >= 12.0 and time <= 12.0:
+
+    # Check if time is >= 12.0 and <= 13.0 print breakfast
+    if time >= 12.0 and time <= 13.0:
         print("Lunch")
+
+    # Check if time is >= 18.0 and <= 19.0 print breakfast
     if time >= 18.0 and time <= 19.0:
         print("Dinner")
+
 
 def convert(time):
     # @input formatr '##:##' or '#:##'
