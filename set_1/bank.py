@@ -1,7 +1,7 @@
 def main() -> None:
     greeting: str = formatGreeting(input('Type your greeting message: '))
     value: int = check_greeting_value(greeting)
-    print(f'GHC {value:.2f}')
+    print(f'GHC {value}')
 
 
 def check_greeting_value(greeting: str) -> int:
