@@ -4,8 +4,8 @@ def main() -> None:
 
 
 def extractFile(ext: str) -> str:
-    match_extendtion = {"gif", "jpg", "jpeg", "png", "pdf", "txt", "zip"}
-    return ext if ext.lower() in match_extendtion else 'application/octet-stream'
+    match_extension = {"gif", "jpg", "jpeg", "png", "pdf", "txt", "zip"}
+    return ext if ext.lower() in match_extension else 'application/octet-stream'
 
 
 def splitFileName(fileName: str) -> str:
