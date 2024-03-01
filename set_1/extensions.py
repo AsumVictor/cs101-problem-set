@@ -1,15 +1,32 @@
-def main() -> None:
-    file = splitFileName(input('Enter the file name: '))
-    print(extractFile(file))
+def main():
+    fileName = getExt(input('Enter the file name here: '))
+    print(getFileType(fileName))
 
 
-def extractFile(ext: str) -> str:
-    match_extension = {"gif", "jpg", "jpeg", "png", "pdf", "txt", "zip"}
-    return ext if ext.lower() in match_extension else 'application/octet-stream'
+def getFileType(ext):
+    extension = {
+        'gif': 'image/gif',
+        'jpg': 'image/jpeg',
+        'jpeg': 'image/jpeg',
+        'png': 'image/png',
+        'pdf': 'application/pdf',
+        'txt': 'text/plain',
+        'zip': 'application/zip'
+    }
+
+    return extension[ext] if ext in extension else 'application/octet-stream'
 
 
-def splitFileName(fileName: str) -> str:
-    return fileName.split('.')[-1]
+def getExt(s):
+    return s.strip().split('.')[-1].lower()
 
 
 main()
+
+# .gif - image/gif
+# .jpg - image/jpeg
+# .jpeg - image/jpeg
+# .png - image/png
+# .pdf - application/pdf
+# .txt - text/plain
+# .zip - application/zip
