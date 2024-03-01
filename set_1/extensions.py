@@ -4,7 +4,7 @@ def main():
 
 
 def getFileType(ext):
-    extension = {
+    extensions = {
         'gif': 'image/gif',
         'jpg': 'image/jpeg',
         'jpeg': 'image/jpeg',
@@ -14,7 +14,7 @@ def getFileType(ext):
         'zip': 'application/zip'
     }
 
-    return extension[ext] if ext in extension else 'application/octet-stream'
+    return extensions[ext] if ext in extensions else 'application/octet-stream'
 
 
 def getExt(s):
