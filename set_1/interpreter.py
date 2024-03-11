@@ -4,7 +4,7 @@ def main() -> None:
     print(calculate(int(x), y, int(z)))
 
 def calculate(x: int, y: str, z: int) -> str:
-    calculate_match: dict[str, function] = {
+    calculate_match = {
         '+': add(x, z),
         '-': substrate(x, z),
         '/': divide(x, z),

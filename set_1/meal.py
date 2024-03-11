@@ -31,7 +31,7 @@ def convert(time):
     # convert the minute to hours ##/60 minutes --> converted hour
     # add to the hours to get total hours:  hour + converted hour --> total hour
     # return total hour
-    hour, minute = time.split(':')
+    hour, minute = time.strip().split(':')
     return float(minute) / 60 + int(hour)
 
 
