@@ -4,7 +4,7 @@ def main():
     print(snake_case)
 
 
-def toSnakeCase(camel: str):
+def toSnakeCase(camel):
     result = ''
     for i in camel:
         if i.upper() == i:
