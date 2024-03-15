@@ -1,7 +1,7 @@
 def main() -> None:
     math_input: str = input(' Enter your Arithemetic: ')
     x, y, z = math_input.split(" ")
-    print(calculate(int(x), y, int(z)))
+    print(calculate(float(x), y, float(z)))
 
 def calculate(x: int, y: str, z: int) -> str:
     calculate_match = {
@@ -10,8 +10,8 @@ def calculate(x: int, y: str, z: int) -> str:
         '/': divide(x, z),
         '*': multiply(x, z)
     }
-    
-    return float(calculate_match[y])
+    result = round(calculate_match[y], 1)
+    return result
 
 def add(x: int, z: int) -> int:
     return x + z
